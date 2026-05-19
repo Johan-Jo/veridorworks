@@ -3,7 +3,8 @@
   "private": true,
   "description": "Veridor Works corporate site (veridorworks.com)",
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build:favicon": "node scripts/build-favicon.mjs"
   },
   "dependencies": {
     "resend": "^4.5.1"
@@ -11,6 +12,8 @@
   "devDependencies": {
     "@types/node": "^22.15.21",
     "@vercel/node": "^5.1.14",
+    "sharp": "^0.34.2",
+    "to-ico": "^1.1.5",
     "typescript": "^5.8.3"
   }
 }
