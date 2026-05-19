@@ -904,6 +904,21 @@
     opacity: 0.65;
     pointer-events: none;
   }
+  .form-privacy {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    color: rgba(244, 241, 234, 0.55);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    max-width: 100%;
+  }
+  .form-privacy a {
+    color: var(--gold-soft);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .form-privacy a:hover { color: var(--bg); }
 
   /* ───────────── Footer ───────────── */
   footer.site {
@@ -1362,8 +1377,9 @@
             <textarea id="f-message" name="message" required placeholder="A short note about the reason for your inquiry."></textarea>
           </div>
         </div>
+        <p class="form-privacy">We use your details only to respond to your inquiry. See our <a href="/privacy">Privacy policy</a>.</p>
         <div class="form-actions">
-          <p class="note">Submissions are reviewed directly by Veridor Works. We do not share contact details with third parties.</p>
+          <p class="note">Submissions are reviewed directly by Veridor Works.</p>
           <button type="submit" class="btn btn-primary btn-arrow">Send inquiry</button>
         </div>
       </form>
@@ -1417,8 +1433,9 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Reach</h5>
+        <h5>Legal</h5>
         <ul>
+          <li><a href="/privacy">Privacy policy</a></li>
           <li><a href="#contact">Contact form</a></li>
           <li><a href="https://veridorworks.com">veridorworks.com</a></li>
         </ul>
