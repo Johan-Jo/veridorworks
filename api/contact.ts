@@ -65,13 +65,14 @@ export default async function handler(
   }
 
   const DEFAULT_INBOX = "johan@disputedesk.app";
+  const DEFAULT_FROM = "Veridor Works <notifications@mail.disputedesk.app>";
 
   const apiKey = env("RESEND_API_KEY");
-  const from = env("EMAIL_FROM");
+  const from = env("EMAIL_FROM") ?? DEFAULT_FROM;
   const to = env("CONTACT_TO_EMAIL") ?? DEFAULT_INBOX;
 
-  if (!apiKey || !from) {
-    console.error("contact: missing RESEND_API_KEY or EMAIL_FROM");
+  if (!apiKey) {
+    console.error("contact: missing RESEND_API_KEY");
     res.status(503).json({ error: "Contact form is not configured." });
     return;
   }

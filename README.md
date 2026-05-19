@@ -50,10 +50,11 @@ Submissions are sent to **johan@disputedesk.app** via `POST /api/contact` and [R
 
 | Variable | Example |
 |----------|---------|
-| `RESEND_API_KEY` | `re_…` (same key as DisputeDesk is fine) |
-| `EMAIL_FROM` | `Veridor Works <notifications@mail.disputedesk.app>` (verified sender in Resend) |
+| `RESEND_API_KEY` | `re_…` (required; same key as DisputeDesk is fine) |
+| `EMAIL_FROM` | Optional — defaults to `Veridor Works <notifications@mail.disputedesk.app>` |
+| `CONTACT_TO_EMAIL` | Optional — defaults to `johan@disputedesk.app` |
 
-`CONTACT_TO_EMAIL` is optional; it defaults to `johan@disputedesk.app`.
+All inquiries are sent by email when the form is submitted. There is no public mailbox on the site; visitors use the contact form only.
 
 **Local testing** (API + static site):
 
