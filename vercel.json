@@ -10,13 +10,5 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.veridorworks.com" }],
-      "destination": "https://veridorworks.com/:path*",
-      "permanent": true
-    }
   ]
 }

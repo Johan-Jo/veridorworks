@@ -36,7 +36,7 @@ Push to `main` on GitHub; Vercel deploys automatically when the project is linke
 
 1. [vercel.com/new](https://vercel.com/new) → Import this repository
 2. Framework preset: **Other** (static)
-3. Add domain `veridorworks.com` (+ optional `www` → apex redirect is in `vercel.json`)
+3. Add domain `veridorworks.com` — see [docs/DOMAIN-SETUP.md](docs/DOMAIN-SETUP.md) if you see **Verification Needed** or **linked to another Vercel account**
 
 ## Portfolio
 
