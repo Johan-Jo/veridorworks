@@ -64,7 +64,7 @@ export default async function handler(
     return;
   }
 
-  const DEFAULT_INBOX = "info@veridorworks.com";
+  const DEFAULT_INBOX = "johan@disputedesk.app";
 
   const apiKey = env("RESEND_API_KEY");
   const from = env("EMAIL_FROM");
