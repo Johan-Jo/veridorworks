@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+
+# Design export artifacts (source lives in repo as index.html)
+VeridorWorks.zip
+extracted/
