@@ -24,3 +24,6 @@ jobs:
           grep -q 'https://veridorworks.com/' index.html
           grep -q 'https://disputedesk.app' index.html
           grep -q 'rel="canonical"' index.html
+
+      - name: Verify contact API
+        run: test -f api/contact.ts

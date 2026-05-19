@@ -42,6 +42,24 @@ Push to `main` on GitHub; Vercel deploys automatically when the project is linke
 
 - [DisputeDesk](https://disputedesk.app) — Shopify dispute & chargeback operations
 
-## Contact form
+## Contact form (Resend)
 
-The contact form is client-side only (shows a success message). Wire a backend (e.g. Resend API route in a future Next.js migration) before treating submissions as delivered.
+Submissions are sent to **info@veridorworks.com** via `POST /api/contact` and [Resend](https://resend.com).
+
+**Vercel environment variables** (Production + Preview):
+
+| Variable | Example |
+|----------|---------|
+| `RESEND_API_KEY` | `re_…` from Resend dashboard |
+| `EMAIL_FROM` | `Veridor Works <info@veridorworks.com>` (must be a verified sender in Resend) |
+
+`CONTACT_TO_EMAIL` is optional; it defaults to `info@veridorworks.com`.
+
+**Local testing** (API + static site):
+
+```bash
+npm install
+npx vercel dev
+```
+
+Plain `npx serve` only serves the HTML; the form needs `vercel dev` for `/api/contact`.

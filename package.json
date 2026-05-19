@@ -1,0 +1,16 @@
+{
+  "name": "veridorworks",
+  "private": true,
+  "description": "Veridor Works corporate site (veridorworks.com)",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "resend": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@vercel/node": "^5.1.14",
+    "typescript": "^5.8.3"
+  }
+}
