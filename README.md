@@ -19,6 +19,17 @@ npx serve .
 
 Open `http://localhost:3000` (serve) or `http://localhost:8080`.
 
+## CI
+
+GitHub Actions workflow is in `.github/workflows/ci.yml`. If push is rejected for workflow scope, run:
+
+```bash
+gh auth refresh -s workflow
+git add .github/workflows/ci.yml
+git commit -m "chore: add CI workflow"
+git push
+```
+
 ## Deploy
 
 Push to `main` on GitHub; Vercel deploys automatically when the project is linked.

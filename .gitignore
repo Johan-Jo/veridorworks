@@ -8,3 +8,6 @@ Thumbs.db
 # Design export artifacts (source lives in repo as index.html)
 VeridorWorks.zip
 extracted/
+.vercel/
+
+.vercel
